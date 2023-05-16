@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Sigmar&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Typing Tution.css">
+    <title>Typing Tuition</title>
+</head>
+<body>
+    <div class="project-title">Typing Tuition</div>
+    <div id="star-game-container">
+        <div id="settings" class="settings">
+          <form id="settings-form">
+            <div class="Slevel">
+              <label for="difficulty" >Select Level :</label>
+              <select id="difficulty">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+              </select>
+            </div>
+          </form>
+          <p class="score-container">Score: <span id="score">0</span></p>
+      </div>   
+
+      <div class="container"> 
+        <p class="time-container" id="time-left">Time left : <span id="time">10s</span></p> 
+          <h1 id="word"></h1>
+          <div class="input-text"><input type="text" id="text" autocomplete="off" placeholder="Type the word here..." onfocus="timerstart()" /></div>
+    
+          <!-- <p class="time-container">Time left: <span id="time">10s</span></p> -->
+    
+          <!-- <p class="score-container">Score: <span id="score">0</span></p> -->
+      </div>
+    </div>
+    <div class="end-game-container-wrapper">
+      <div id="end-game-container" class="end-game-container">
+        <p class="game-over">TIME OUT !!!</p>
+        <p class="score">Your Final Score :<span id="Score"></span></p>
+        <button id="Qbtn">Quit</button>
+        <button id="Rbtn">Replay</button> 
+    </div> 
+    </div>
+    <script src="Typing Tution.js"></script>
+    <p class="label">Designed & Developed by Er.Subham Sharma</p>
+</body>
+</html>
